@@ -6,19 +6,19 @@
 This repository documents a 2-tier AWS cloud architecture designed to host a scalable and secure web application. It consists of EC2 instances in the public subnet and a MySQL RDS database in the private subnet. The architecture is deployed in the N. Virginia Region (us-east-1) and spans two Availability Zones for high availability.
 
 # Components
- Amazon VPC: Custom Virtual Private Cloud to isolate network resources.
-Subnets:
-Public Subnets (AZ a & b): Host EC2 instances for frontend/application layer.
+ # Amazon VPC: Custom Virtual Private Cloud to isolate network resources.
+ # Subnets:
+   Public Subnets (AZ a & b): Host EC2 instances for frontend/application layer.
 
-Private Subnets (AZ a & b): Host MySQL RDS instances securely.
+   Private Subnets (AZ a & b): Host MySQL RDS instances securely.
 
- Amazon EC2: Virtual servers to run application logic or web services.
+  # Amazon EC2: Virtual servers to run application logic or web services.
 
- Amazon RDS (MySQL): Managed relational database service in a private subnet.
+ # Amazon RDS (MySQL): Managed relational database service in a private subnet.
 
- Internet Gateway: Enables internet access for public subnet resources.
+ # Internet Gateway: Enables internet access for public subnet resources.
 
- Route Tables: Control traffic routing within VPC.
+ # Route Tables: Control traffic routing within VPC.
 
 # Use Case
 
