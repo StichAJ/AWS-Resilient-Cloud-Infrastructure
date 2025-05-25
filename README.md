@@ -1,6 +1,6 @@
 ## Building Resilient Cloud Infrastructure with AWS
 
-AWS 2-Tier Architecture: EC2 with MySQL RDS
+# AWS 2-Tier Architecture: EC2 with MySQL RDS
 
 # 📘 Overview
 
@@ -36,7 +36,7 @@ Ideal for:
 
 🚀 MVP deployments
 
-🚀 Deployment Instructions
+# 🚀 Deployment Instructions
 
 🔧 VPC Setup:
 
@@ -44,25 +44,25 @@ Create a VPC with CIDR block (e.g., 10.0.0.0/16).
 
 Set up 2 public subnets and 2 private subnets across different AZs.
 
-🌐 Internet Gateway:
+# 🌐 Internet Gateway:
 
 Attach an Internet Gateway to the VPC.
 
 Modify the route table to enable internet access from public subnets.
 
-💻 EC2 Instances:
+# 💻 EC2 Instances:
 
 Launch EC2 instances in each public subnet.
 
 Use security groups to allow HTTP/HTTPS and SSH access.
 
-🗄️ RDS MySQL:
+# 🗄️ RDS MySQL:
 
 Launch a Multi-AZ RDS MySQL instance in the private subnets.
 
 Restrict access using security groups that allow access only from EC2 instances.
 
-🔐 Security Considerations
+# 🔐 Security Considerations
 
 Use least privilege IAM roles.
 
@@ -72,7 +72,7 @@ Enable Multi-AZ and automatic backups for RDS.
 
 Disable public access to RDS.
 
-📈 Scalability Recommendations
+# 📈 Scalability Recommendations
 
 Deploy an Application Load Balancer (ALB) in front of EC2 instances.
 
