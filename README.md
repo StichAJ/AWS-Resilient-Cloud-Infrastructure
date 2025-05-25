@@ -2,11 +2,11 @@
 
 AWS 2-Tier Architecture: EC2 with MySQL RDS
 
-📘 Overview
+# 📘 Overview
 
 This repository documents a 2-tier AWS cloud architecture designed to host a scalable and secure web application. It consists of EC2 instances in the public subnet and a MySQL RDS database in the private subnet. The architecture is deployed in the N. Virginia Region (us-east-1) and spans two Availability Zones for high availability.
 
-🧱 Components
+# 🧱 Components
 
  Amazon VPC: Custom Virtual Private Cloud to isolate network resources.
 
@@ -24,7 +24,7 @@ This repository documents a 2-tier AWS cloud architecture designed to host a sca
 
 🧭 Route Tables: Control traffic routing within VPC.
 
-💼 Use Case
+# 💼 Use Case
 
 Ideal for:
 
